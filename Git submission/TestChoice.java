@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class TestChoice {
     public void chosenTest(int choice) {
         if (choice == 1) {
@@ -5,12 +7,21 @@ public class TestChoice {
         } else if (choice == 2) {
             BinarySearch binarySearch = new BinarySearch();
         } else if (choice == 3) {
-            System.out.println("Choice 3 not implemented.");
+            BubbleSort bubbleSort = new BubbleSort(randomTen());
         } else if (choice == 4) {
-            System.out.println("Choice 4 not implemented.");
+            MergeSort mergeSort = new MergeSort(randomTen());
         } else if (choice == 5) {
             System.out.println("Choice 5 not implemented.");
         }
     }
 
+    public int[] randomTen() {
+        Random random = new Random();
+        int[] array = new int[10];
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(200) - 99;
+        }
+        return array;
+
+    }
 }
