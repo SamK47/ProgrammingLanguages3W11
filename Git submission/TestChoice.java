@@ -9,7 +9,7 @@ public class TestChoice {
         } else if (choice == 3) {
             BubbleSort bubbleSort = new BubbleSort(randomTen());
         } else if (choice == 4) {
-            MergeSort mergeSort = new MergeSort(randomTen());
+            System.out.println("Choice 4 not implemented.");
         } else if (choice == 5) {
             System.out.println("Choice 5 not implemented.");
         }
