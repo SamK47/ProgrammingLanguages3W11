@@ -1,6 +1,7 @@
 import java.util.Random;
 
 public class TestChoice {
+
     public void chosenTest(int choice) {
         if (choice == 1) {
             LinearSearch linearSearch = new LinearSearch();
