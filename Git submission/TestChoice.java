@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class TestChoice {
-
+    // Provides values to the chosen tests.
     public void chosenTest(int choice) {
         if (choice == 1) {
             LinearSearch linearSearch = new LinearSearch();
@@ -16,6 +16,7 @@ public class TestChoice {
         }
     }
 
+    // Generates an arry with 10 random values.
     public int[] randomTen() {
         Random random = new Random();
         int[] array = new int[10];
